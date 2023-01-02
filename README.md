@@ -147,6 +147,8 @@ Solution:
 
 ### The `display` module
 
+The `display` module relies on the `matplotlib` library. You have to install it first to use this module.
+
 To use use the module, add to the top of the program.
 
 ```python
