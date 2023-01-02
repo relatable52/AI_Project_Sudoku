@@ -3,7 +3,7 @@
 A sudoku solver for Intro to AI course project.
 
 ## Overview
-----
+
 ### `src` folder
 `src` folder contains different modules, all written in Python. 
 
@@ -17,12 +17,11 @@ A sudoku solver for Intro to AI course project.
 
 Contains the datasets used to test run the program.
 
-### `collected` folder
+### `collected_data` folder
 
 Contains all the data collected by the program.
 
 ## Usage
-----
 
 First create a new python script in the same directory as the modules.
 
@@ -185,7 +184,6 @@ All functions input a string, which is a name a data file in the `dataset` folde
 The collected data is written in a `.csv` file in the `collected_data` folder.
 
 ## References
-----
 
 + https://github.com/MaximeDaigle/sudoku
 + https://norvig.com/sudoku.html
