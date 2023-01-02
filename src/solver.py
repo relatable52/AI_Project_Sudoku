@@ -114,7 +114,7 @@ def getPoint(grid):
     
     return conflicts
 
-def solveSimulatedAnnealing(grid, temp=0.5, alpha=0.999999):
+def solveSimulatedAnnealing(grid, temp=0.5, alpha=0.99999):
     cur_sol = initializeSolution(grid=grid)
     t = temp
     a = alpha
