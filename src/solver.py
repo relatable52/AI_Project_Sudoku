@@ -34,7 +34,7 @@ def solveBacktracking(grid):
                     if checkCell(row=row, col=col, num=i):
                         grid[row][col] = i
                         walk(n+1)
-                        grid[row][col] = 0
+                grid[row][col] = 0
                         
     sol = list()
     walk(0)          
@@ -225,12 +225,6 @@ def placeValue(domain, col, row):
                 domain[row][col] = [num]
                 break
 
-def checkSolved(domain):
-    for i in range(9):
-        for j in range(9):
-            if len(domain[i][j]) > 1:
-                return False
-    return True
 
 def solveConstraintPropagation(grid):
     def countDomain(domain):
@@ -269,7 +263,7 @@ def solveConstraintPropagation(grid):
                     if checkCell(row=row, col=col, num=i):
                         grid[row][col] = i
                         walk(n+1)
-                        grid[row][col] = 0
+                grid[row][col] = 0
 
     domain = initDomain(grid=grid)
     sol = list()
